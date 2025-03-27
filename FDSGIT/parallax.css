@@ -1,0 +1,71 @@
+/* General Reset */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Section with Parallax Effect */
+.hero {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(74, 77, 242);
+  position: relative;
+  background: url('https://source.unsplash.com/1600x900/?nature,landscape') no-repeat center center/cover;
+  
+  /* Parallax Effect */
+  background-attachment: fixed;
+}
+
+/* Hero Content */
+.hero-content {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: rgb(24, 133, 216);
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgb(217, 0, 255);
+  color: white;
+}
+
+/* Extra Content Section */
+.content {
+  padding: 50px;
+  text-align: center;
+  background: #000000;
+}
+
+.content h2 {
+  font-size: 2rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}

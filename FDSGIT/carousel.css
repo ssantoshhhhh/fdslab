@@ -1,0 +1,57 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 50px;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Slide */
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100px; /* Adjust height based on text */
+  position: relative;
+}
+
+.testimonial {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: fade 12s infinite;
+}
+
+/* Assign each testimonial a delay for animation */
+.testimonial:nth-child(1) { animation-delay: 0s; }
+.testimonial:nth-child(2) { animation-delay: 3s; }
+.testimonial:nth-child(3) { animation-delay: 6s; }
+.testimonial:nth-child(4) { animation-delay: 9s; }
+
+/* Keyframe Animation */
+@keyframes fade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-container {
+      width: 80%;
+  }
+}
